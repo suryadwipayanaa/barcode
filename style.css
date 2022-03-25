@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@100;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+body{
+    background-color: #758ae6;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header .qr{
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 7px;
+    transition: 1s ease all;
+    box-shadow: 3px 10px 5px rgba(0,0,0,.3);
+}
+
+header .judul h2{
+    font-weight: 500;
+    color: #1e1101;
+}
+
+header p{
+    color: #372106;
+    font-weight: 300;
+}
+
+header input{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px 10px;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    box-sizing: border-box;
+}
+
+header button{
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #758ae6;
+    margin-top: 20px;
+    font-size: 15px;
+    padding: 10px 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+header .design p{
+    margin-bottom: 30px;
+    font-size: 10px;
+    text-align: right;
+    margin-top: 20px;
+    position: relative;
+}
+
+header .design p::before{
+    position: absolute;
+    content: '';
+    right: 0;
+    bottom: -5px;
+    width: 50px;
+    height: 30px;
+    z-index: 9999;
+    border-bottom: 2px solid #758ae6;
+}
+
+header .design p::after{
+    position: absolute;
+    content: '';
+    right: 0;
+    bottom: -10px;
+    width: 30px;
+    height: 30px;
+    z-index: 9999;
+    border-bottom: 2px solid #758ae6;
+}
+
+header .image{
+    border: 1px solid #ccc;
+    margin: 10px auto;
+    display: none;
+    justify-content: center;
+}
+
+
+header .image.active{
+   display: flex;
+}
+
+
+header img{
+    width: 60%;
+    padding: 30px 0;
+}
